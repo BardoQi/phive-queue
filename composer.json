@@ -1,5 +1,5 @@
 {
-    "name": "bardoqi/phive-queue",
+    "name": "rybakit/phive-queue",
     "description": "$queue->push('I can be popped off after', '10 minutes');",
     "keywords": ["queue", "schedule", "priority", "delayed", "mongodb", "redis", "tarantool", "beanstalk", "sysv", "postgres", "mysql", "sqlite", "pdo"],
     "homepage": "https://github.com/rybakit/phive-queue",
@@ -9,10 +9,6 @@
         {
             "name": "Eugene Leonovich",
             "email": "gen.work@gmail.com"
-        },
-        {
-            "name": "Bardo Qi",
-            "email": "bardoqi@gmail.com"
         }
     ],
     "require": {

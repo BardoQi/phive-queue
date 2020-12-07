@@ -49,7 +49,7 @@ LUA;
             $item = $this->redis->_serialize($item);
         }
 
-        $result = $this->redis->evaluate(self::SCRIPT_PUSH, ['items', 'seq', $item, $eta], 2);
+        $result = $this->redis->eval(self::SCRIPT_PUSH, ['items', 'seq', $item, $eta], 2);
         $this->assertResult($result);
     }
 
@@ -58,7 +58,7 @@ LUA;
      */
     public function pop()
     {
-        $result = $this->redis->evaluate(self::SCRIPT_POP, ['items', time()], 1);
+        $result = $this->redis->eval(self::SCRIPT_POP, ['items', time()], 1);
         $this->assertResult($result);
 
         if (-1 === $result) {

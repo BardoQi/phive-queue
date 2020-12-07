@@ -6,6 +6,7 @@ Phive Queue
 
 Phive Queue is a time-based scheduling queue with multiple backend support.
 
+This package is forked from https://github.com/rybakit/phive-queue
 
 ## Table of contents
 
